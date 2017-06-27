@@ -1,0 +1,239 @@
+* {
+  /*font-family: Verdana, sans-serif;*/
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: black;
+}
+
+/*Header - this is step 1.*/
+header {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid black;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*implement flex-grow property to fill the container!
+pushes nav to the right*/
+div.logo {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  margin-right: 12px;
+}
+
+.logo span {
+  color: MediumAquamarine;
+}
+
+nav {
+  display: block;
+  padding-right: 30px;
+  color: black;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+nav a {
+  text-decoration: underline;
+}
+
+/*Main Content Container - this is step 2.*/
+
+/*div {
+  border: 1px solid black;
+}*/
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.content {
+  display: flex;
+  margin: 0 auto 78px auto;
+  width: 90%;
+  padding-top: 116px;
+  /*border: 1px solid black;*/
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+/*column widths*/
+.column.large {
+  width: 630px;
+  flex-grow: 1;
+}
+
+.column.medium {
+  width: 300px;
+  flex-grow: 1;
+}
+
+.column.small {
+  width: 240px;
+  flex-grow: 1;
+}
+
+p.narrative {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+/*Add images - this is step 3.*/
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.lead-story .image-content {
+background-image: url("../images/img-story-main.png");
+margin-top: 0;
+font-size: 40px;
+text-align: left;
+}
+
+.lead-story .image-content span {
+  margin-left: 20px;
+}
+
+.cat-ceo  {
+  background-image: url("../images/img-story-1.png");
+}
+
+.fall-cancelled {
+  background-image: url("../images/img-story-2.png");
+}
+
+.pop-culture {
+  background-image: url("../images/img-story-3.png");
+}
+
+/*Make stories flexible  - step 4.*/
+
+.narrative {
+  margin-top: 16px;
+}
+
+.image-content {
+  height: 300px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/*The stories, with their headlines, images, and text are flex items*/
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+/*In the first column, the flex items should be horizontally aligned*/
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/*News bites - step 5 */
+
+/*Third column's flex direction is column -
+declared already above .column */
+/*flex-items have to margin
+black border on top and bottom */
+/*style type */
+
+img.cookie {
+  height: 240px;
+}
+
+.news-bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bite {
+  display: block;
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  font-family: Verdana;
+  color: DimGray;
+  font-size: 12px;
+}
+
+.bite span {
+  padding-left: 11px;
+}
+
+/*Create Footer - step 6 */
+/*Footer is a flex container */
+/*Inside Footer content is centered along the vertical & horizontal axes */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+}
+
+footer .title {
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+  padding-right: 25px;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
